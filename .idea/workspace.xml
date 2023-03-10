@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c308ea3-2ef6-4949-896b-943ed19335ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaPracticesR.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice4/Task3/Sport.java" afterDir="false" />
+    <list default="true" id="8c308ea3-2ef6-4949-896b-943ed19335ae" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice15/Calculator_num4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice15/Calculator_num4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +42,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Practice6.undo.Tester">
-    <configuration name="GifImage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice5.Task4.GifImage" />
+  <component name="RunManager" selected="Application.Menu_num3">
+    <configuration name="Calculator_num4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice15.Calculator_num4" />
       <module name="JavaPracticesR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice5.Task4.*" />
+          <option name="PATTERN" value="Practice15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,12 +56,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice6.Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice6.Tester" />
+    <configuration name="Email" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice14.Number6.Email" />
       <module name="JavaPracticesR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice6.*" />
+          <option name="PATTERN" value="Practice14.Number6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice6.undo.Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice6.undo.Tester" />
+    <configuration name="Menu_num3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice15.Menu_num3" />
       <module name="JavaPracticesR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice6.undo.*" />
+          <option name="PATTERN" value="Practice15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice6.InternetShop.Shop" />
+    <configuration name="Password" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice14.Number7.Password" />
       <module name="JavaPracticesR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice6.InternetShop.*" />
+          <option name="PATTERN" value="Practice14.Number7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice6.Converter.Tester" />
+    <configuration name="Plus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice14.Number4.Plus" />
       <module name="JavaPracticesR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice6.Converter.*" />
+          <option name="PATTERN" value="Practice14.Number4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Practice6.undo.Tester" />
-        <item itemvalue="Application.Practice6.Tester" />
-        <item itemvalue="Application.Shop" />
-        <item itemvalue="Application.Tester" />
-        <item itemvalue="Application.GifImage" />
+        <item itemvalue="Application.Menu_num3" />
+        <item itemvalue="Application.Calculator_num4" />
+        <item itemvalue="Application.Password" />
+        <item itemvalue="Application.Email" />
+        <item itemvalue="Application.Plus" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +127,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677523863427</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1677777972790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677777972790</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,5 +147,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
