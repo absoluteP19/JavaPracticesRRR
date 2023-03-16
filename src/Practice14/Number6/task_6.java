@@ -9,19 +9,14 @@ package Practice14.Number6;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Email {
-
-    public static boolean checkEmail(String s){
-        Matcher m = Pattern.compile(
-                "[a-zA-Z0-9]+[a-zA-Z0-9!#$%&'*+\\-/=?^_`{|}~.]*@[a-zA-Z0-9\\-_.]+\\.[a-zA-Z]+"
-        ).matcher(s);
-        return m.find() && m.group().equals(s);
-    }
-
-    public static void main(String [] args){
-        System.out.println(checkEmail("user@example.com"));
-        System.out.println(checkEmail("myhost@@@com.ru"));
-        System.out.println(checkEmail("@my.ru"));
-        System.out.println(checkEmail("Julia String."));
+public class task_6 {
+    public static void main(String[] args) {
+        String regex = "[\\w\\-_\\.+]*[\\w\\-_\\.]+\\@([\\w]+\\.)*[\\w]+";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher("user@example.com, root@localhost, myhost@@@com.ru");
+        System.out.println("String: user@example.com, root@localhost, myhost@@@com.ru");
+        System.out.println("Regex: [\\w\\-_\\.+]*[\\w\\-_\\.]+\\@([\\w]+\\.)*[\\w]+");
+        while (matcher.find())
+            System.out.println(matcher.group());
     }
 }

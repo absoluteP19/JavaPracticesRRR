@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c308ea3-2ef6-4949-896b-943ed19335ae" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/Practice14/Number2/task_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice14/Number3/task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice14/Number5/task_5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice11/First.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice11/Second.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice11/Third.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice15/Menu_num3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice15/Menu_num3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice10/Merge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice10/SortingStudentsByGpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice10/SortingStudentsByGpa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice10/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice10/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice14/Number1/Ref_STR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice14/Number2/OtherSTR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice14/Number3/Current.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice14/Number4/Plus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice14/Number4/task_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice14/Number5/Date.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice14/Number6/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice14/Number6/task_6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +53,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Practice12.First.Tester">
-    <configuration name="Number4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice8.Number4" />
+  <component name="RunManager" selected="Application.Tester">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice14.Number1.Main" />
       <module name="JavaPracticesR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice8.*" />
+          <option name="PATTERN" value="Practice14.Number1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Number7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice8.Number7" />
+    <configuration name="Password" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice14.Number7.Password" />
       <module name="JavaPracticesR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice8.*" />
+          <option name="PATTERN" value="Practice14.Number7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,25 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice12.First.Tester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice12.First.Tester" />
+    <configuration name="Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice13.Task2.Person" />
       <module name="JavaPracticesR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice12.First.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Practice12.First.Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice12.First.Tester" />
-      <module name="JavaPracticesR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practice12.First.*" />
+          <option name="PATTERN" value="Practice13.Task2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,11 +94,24 @@
       </method>
     </configuration>
     <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice11.Tester" />
+      <option name="MAIN_CLASS_NAME" value="Practice9.Tester" />
       <module name="JavaPracticesR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice11.*" />
+          <option name="PATTERN" value="Practice9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="task_7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice14.Number7.task_7" />
+      <module name="JavaPracticesR" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practice14.Number7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Practice12.First.Tester" />
-        <item itemvalue="Application.Practice12.First.Tester (1)" />
         <item itemvalue="Application.Tester" />
-        <item itemvalue="Application.Number4" />
-        <item itemvalue="Application.Number7" />
+        <item itemvalue="Application.Person" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Password" />
+        <item itemvalue="Application.task_7" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678460772579</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1678993600383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678993600383</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

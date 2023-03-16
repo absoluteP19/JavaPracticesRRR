@@ -7,113 +7,35 @@ package Practice10;
 
 
 public class Student {
-    String name;
-    String surname;
-    String speciality;
-    int course;
-    int group;
-    int id;
-    int gradeMath;
-    int gradeInf;
-    int gradeSport;
+    private String firstName;
+    private String lastName;
+    private String speciality;
+    private int course;
+    private String group;
+    private int gpa;
 
-
-    public Student(String name, String surname, String speciality, int course, int group, int id, int gradeMath, int gradeInf, int gradeSport) {
-        this.name = name;
-        this.surname = surname;
+    public Student(String firstName, String lastName, String speciality, int course, String group, int gpa) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.speciality = speciality;
         this.course = course;
         this.group = group;
-        this.id = id;
-        this.gradeMath = gradeMath;
-        this.gradeInf = gradeInf;
-        this.gradeSport = gradeSport;
+        this.gpa = gpa;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public String getSpeciality() {
-        return speciality;
-    }
-
-    public int getCourse() {
-        return course;
-    }
-
-    public int getGroup() {
-        return group;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public int getGradeMath() {
-        return gradeMath;
-    }
-
-    public int getGradeInf() {
-        return gradeInf;
-    }
-
-    public int getGradeSport() {
-        return gradeSport;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setSpeciality(String speciality) {
-        this.speciality = speciality;
-    }
-
-    public void setCourse(int course) {
-        this.course = course;
-    }
-
-    public void setGroup(int group) {
-        this.group = group;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setGradeMath(int gradeMath) {
-        this.gradeMath = gradeMath;
-    }
-
-    public void setGradeInf(int gradeInf) {
-        this.gradeInf = gradeInf;
-    }
-
-    public void setGradeSport(int gradeSport) {
-        this.gradeSport = gradeSport;
+    public int getGpa() {
+        return gpa;
     }
 
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", speciality='" + speciality + '\'' +
                 ", course=" + course +
-                ", group=" + group +
-                ", id=" + id +
-                ", gradeMath=" + gradeMath +
-                ", gradeInf=" + gradeInf +
-                ", gradeSport=" + gradeSport +
+                ", group='" + group + '\'' +
+                ", gpa=" + gpa +
                 '}';
     }
 }

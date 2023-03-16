@@ -1,116 +1,110 @@
 package Practice10;
 
-//Напишите класс SortingStudentsByGPA (может у вас называться
-//        Tester или Main, так как содержит функцию main()) создайте поле как
-//        массив объектов Student с названием iDNumber, вы можете использовать
-//        как массив, так и и ArrayList или TreeSet для хранения данных о студентах
-//        Добавьте методы класса: 1) заполнения массива setArray() 2) метод для
-//        сортировки по среднему баллу студентов quicksort() который реализует
-//        интерфейс Comparator таким образом, чтобы он сортировал студентов с их
-//        итоговым баллом в порядке убывания. В качестве алгоритма сортировки
-//        использовать методы сортировок: слиянием и быструю сортировку
-//        (добавьте в класс еще один метод). 3)метод для вывода массива студентов
-//        outArray()
-//        4)Добавьте в класс возможность сортировать список студентов по другому
-//        полю
-
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 
 public class SortingStudentsByGpa {
-    static ArrayList<Student> students = new ArrayList<>();
+    public ArrayList<Student> iDNumber = new ArrayList<>();
+
+    public void setArray(Student student) {
+        this.iDNumber.add(student);
+    }
+
+    public static void swap(Student[] students, int l, int r) {
+        Student temp = students[l];
+        students[l] = students[r];
+        students[r] = temp;
+    }
+
+    public static class sortingStudentsByGPA implements Comparator<Student> {
+        @Override
+        public int compare(Student s1, Student s2) {
+            return s1.getGpa() - s2.getGpa();
+        }
+    }
+
+    public static Student[] quickSort(Student[] students, int left, int right, Comparator<Student> comparator) {
+        int l = left;
+        int r = right;
+        if (r > l) {
+            Student temp = students[(l + r) / 2];
+            while (l <= r) {
+                while (l < right && comparator.compare(students[l], temp) < 0) l++;
+                while (r > left && comparator.compare(students[r], temp) > 0) r--;
+                if (l <= r) swap(students, l++, r--);
+            }
+            if (left < r) quickSort(students, left, r, comparator);
+            if (l < right) quickSort(students, l, right, comparator);
+        }
+        return students;
+    }
+
+    public void outArray() {
+        System.out.println(iDNumber);
+    }
+
+    public static void merge(Student[] students, int start, int mid, int end, Comparator<Student> comparator) {
+        Student[] temp = new Student[students.length];
+        int spot = start;
+        int pos1 = start;
+        int pos2 = mid + 1;
+
+        while (!(pos1 > mid && pos2 > end)) {
+            if ((pos1 > mid) || (pos2 <= end) && (comparator.compare(students[pos2], students[pos1]) < 0))
+                temp[spot++] = students[pos2++];
+            else
+                temp[spot++] = students[pos1++];
+        }
+
+        for (int i = start; i <= end; i++) students[i] = temp[i];
+    }
+
+    public static void mergeSort(Student[] students, int start, int end, Comparator<Student> comparator) {
+        if (start < end) {
+            int mid = (start + end) / 2;
+            mergeSort(students, start, mid, comparator);
+            mergeSort(students, mid + 1, end, comparator);
+            merge(students, start, mid, end, comparator);
+        }
+    }
+
+    public static Student[] mergeArr(Student[] s1, Student[] s2, Student[] s3, int n, int m, Comparator<Student> comparator) {
+        int i = 0, j = 0, k = 0;
+        while (i < n) s3[k++] = s1[i++];
+        while (j < m) s3[k++] = s2[j++];
+        mergeSort(s3, 0, s3.length - 1, comparator);
+        return s3;
+    }
 
     public static void main(String[] args) {
-        setArray(5);
-        ArrayList<Student> cpStudents = new ArrayList<>();
-        for (int i = 0; i < 5; ++i) {
-            cpStudents.add(students.get(i));
-        }
-        printArray();
-        quickSort(students, new Comparator<Student>() {
-            @Override
-            public int compare(Student o1, Student o2) {
-                int av = o1.gradeInf + o1.gradeMath + o1.gradeSport;
-                int bv = o2.gradeInf + o2.gradeMath + o2.gradeSport;
-                return bv - av;
-            }
-        });
-        printArray();
-        students = cpStudents;
-        mergeSort(students, new Comparator<Student>() {
-            @Override
-            public int compare(Student o1, Student o2) {
-                int av = o1.gradeInf + o1.gradeMath + o1.gradeSport;
-                int bv = o2.gradeInf + o2.gradeMath + o2.gradeSport;
-                return bv - av;
-            }
-        });
-        printArray();
-    }
+        Student[] students_1 = new Student[3];
+        Comparator<Student> comparator = new sortingStudentsByGPA();
+        students_1[0] = new Student("Ruvik", "F1", "Game", 2, "ИНБО-12-21", 5);
+        students_1[1] = new Student("Sofi", "F2", "Web", 2, "ИНБО-12-21", 4);
+        students_1[2] = new Student("Ger", "F3", "AI", 2, "ИНБО-12-21", 3);
+        System.out.println("\nArray before quick sorting:");
+        for (int i = 0; i < 3; i++)
+            System.out.println(students_1[i]);
+        students_1 = quickSort(students_1, 0, students_1.length - 1, comparator);
+        System.out.println("\nArray after quick sorting:");
+        for (int i = 0; i < 3; i++)
+            System.out.println(students_1[i]);
+        Student[] students_2 = new Student[3];
+        students_2[0] = new Student("Ruvik", "F1", "Mobile", 2, "ИНБО-12-21", 2);
+        students_2[1] = new Student("Sofi", "F2", "Web", 2, "ИНБО-12-21", 1);
+        students_2[2] = new Student("Ger", "F3", "AI", 2, "ИНБО-12-21", 0);
+        System.out.println("\nArray before merge sorting:");
+        for (int i = 0; i < 3; i++)
+            System.out.println(students_2[i]);
+        mergeSort(students_2, 0, students_2.length - 1, comparator);
+        System.out.println("\nArray after quick sorting:");
+        for (int i = 0; i < 3; i++)
+            System.out.println(students_2[i]);
+        Student[] students_3 = new Student[students_2.length + students_1.length];
+        students_3 = mergeArr(students_1, students_2, students_3, students_1.length, students_2.length, comparator);
+        System.out.println("\nArray after merge sorting:");
+        for (int i = 0; i < 6; i++)
+            System.out.println(students_3[i]);
 
-    public static void setArray(int n) {
-        students.clear();
-
-        for (int i = 0; i < n; ++i) {
-            students.add(new Student("Student",
-                    Integer.valueOf(i).toString(),
-                    "it",
-                    (int)(Math.random() * 4 + 1),
-                    (int)(Math.random() * 30 + 1),
-                    i,
-                    (int)(Math.random() * 5 + 1),
-                    (int)(Math.random() * 5 + 1),
-                    (int)(Math.random() * 5 + 1))
-            );
-        }
-    }
-
-    public static void quickSort(ArrayList<Student> students, Comparator<Student> cmp) {
-        students.sort(cmp);
-    }
-
-    public static void mergeSort(ArrayList<Student> ar, Comparator<Student> cmp) {
-        if (ar.size() <= 1) {
-            return;
-        }
-        ArrayList<Student> a = new ArrayList<>();
-        ArrayList<Student> b = new ArrayList<>();
-        for (int i = 0; i < ar.size(); ++i) {
-            if (i * 2 < ar.size()) {
-                a.add(ar.get(i));
-            }
-            else {
-                b.add(ar.get(i));
-            }
-        }
-        mergeSort(a, cmp);
-        mergeSort(b, cmp);
-        ar.clear();
-        int l = 0, r = 0;
-        while (l < a.size() && r < b.size()) {
-            int av = a.get(l).gradeInf + a.get(l).gradeMath + a.get(l).gradeSport;
-            int bv = b.get(r).gradeInf + b.get(r).gradeMath + b.get(r).gradeSport;
-            if (cmp.compare(a.get(l), b.get(r)) < 0) {
-                ar.add(a.get(l++));
-            }
-            else {
-                ar.add(b.get(r++));
-            }
-        }
-        while (l < a.size()) {
-            ar.add(a.get(l++));
-        }
-        while (r < b.size()) {
-            ar.add(b.get(r++));
-        }
-    }
-
-    public static void printArray() {
-        for (Student i : students) {
-            System.out.println(i);
-        }
-        System.out.println();
     }
 }
